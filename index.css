@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+
+}
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 30px;
+  }
+
+ 
+  .whole{
+
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255));;
+
+  }
+ 
+
+
+#rform{
+    padding-left: 38%;
+    padding-bottom: 1%;
+    
+}
+  #img2{
+    padding-left: 60px;
+  }
+
+ 
+  #form{
+    border-style: solid;
+     margin: 8% 8% 8% 8%;
+   
+  }
+  #form:hover{
+    background-image: linear-gradient(to right, rgb(244, 241, 249) , rgb(181, 165, 195));;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+    border-radius: 0px 25px 25px 25px;
+  }
+  input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+ 
+  input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+
+    margin: 20px 0;
+    
+    box-sizing: border-box;
+  }
+  input[type=email ] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  label{
+    font-size: 18px;
+    padding-left: 5%;
+    
+  }
+  #mobilenoo #citystate #areindian{
+    display: block;
+  }
+  span{
+
+    font-size: 18px;
+    padding-left: 70px;
+  }
+  label[for="email"] {
+    margin-left: 79px;
+ }
+
+ label[for="state"] {
+    margin-left: 35px;
+ }
+ label[for="10thpassing"] {
+    margin-left: 10px;
+ }
+
+
+#img11{
+  margin-left: 16%;
+}
+#box1  {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+  #box2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ #sbutton{
+    margin-top: 30px;
+    margin-left: 43%;
+    margin-bottom: 50px;
+    font-size: 20px;
+ }
+
+ input {
+  margin-top: 1rem;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: white;
+   background-image: linear-gradient(to right, rgb(180, 159, 221) , rgb(160, 126, 186));;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+}
+#sbutton{
+  background-image: linear-gradient(to right, rgb(180, 159, 221) , rgb(160, 126, 186));;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+
+    #form #citystate #areindian #tenth #tweleth{
+      display: flex;
+    }
+  }

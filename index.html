@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZTechBee Registration</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <style>
+  	.form-error-msg{color:red;font-size: 12p}
+  </style>
+
+  <body>
+    <div class="whole">
+ 
+      <div class="logo">
+        <img
+          width="240px"
+          id="img1"
+          src="images\Zee_media_logo.svg.png"
+          alt=""
+        />
+        
+        <img width="240px"  id="img2" src="images/new_logo_2.png" alt="" />
+      </div>
+  
+      <div id="form">
+        <h1 id="rform">Registration Form</h1>
+  
+        <form action="">
+          <div class="form-1">
+            <label for="name"> Name :   </label>
+            <input type="text" maxlength="150" id="name" />
+            <span  class="form-error-msg" id="name-err"></span>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+            <span  class="form-error-msg" id="email-err"></span>
+        
+             <div id="number">
+              <label for="number">Mobile no:</label>
+              <input type="text" maxlength="10" id="number" />
+              <span  class="form-error-msg" id="mobile-err"></span>
+  
+            
+             
+            <div  id="box1">
+
+              <label for="Male">Male</label>
+              <input type="radio" name="gender"  class="genderradio" checked="checked" id="Male" value="Male" />
+              <label for="Female">Female</label>
+              <input type="radio" name="gender"  class="genderradio" id="Female" value="Female" />
+              <label for="Other">Other</label>
+              <input type="radio" name="gender"  class="genderradio" id="Other" value="Other" />
+            <span  id="gender-err"></span>
+            </div>
+            
+           
+  
+         <div id="citystate">
+          <div class="form-2">
+            <label for="city"> Name of City :</label>
+            <input type="text" maxlength="150" id="city" />
+            <span  class="form-error-msg" id="city-err"></span>
+            <label for="state">Name of State:</label>
+            <select name="state" id="state" class="form-control">
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">
+                Andaman and Nicobar Islands
+              </option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">
+                Dadar and Nagar Haveli
+              </option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+                        <span  id="city-rrr"></span>
+         </div>
+            
+          <div id="box2">
+
+
+            <div id="areindian">
+              <span id="indianornot" > Are you a indian ?</span>
+              <label for="Yes">Yes</label>
+              <input type="radio" name="Indian" id="Yes"   checked="checked" class="nationality" value="Yes" />
+              <label for="No">No</label>
+              <span  class="form-error-msg" id="nation-err"></span>
+              <input type="radio" name="Indian"  class="nationality" id="No" value="No" />
+          </div>
+
+           </div>
+            
+
+            
+            
+
+            <div id="tenth">
+              <label for="10th">10th(% or CGPA):</label>
+              <input type="text" maxlength="150" id="marks" />
+              <span  class="form-error-msg" id="10thhclass-err"></span>
+              <label for="10thpassing">Year of Passing:</label>
+              <input type="text" maxlength="150" id="passing10" />
+              <span  class="form-error-msg" id="passingyear-err"></span>
+
+            </div>
+           
+           <div id="tweleth">
+
+            <label for="12th">"12th(% or CGPA):"</label>
+            <input type="text" maxlength="150" id="marks12" />
+                        <span  class="form-error-msg" id="12thhclass-err"></span>
+            <label for="12thpassing"> Year of passing:</label>
+            <input type="text" maxlength="150" id="passing12" />
+            <span  class="form-error-msg" id="passingyear12-err"></span>
+           
+           </div>
+            <label for="img">Select image:</label>
+            <input class="upload" type="file" id="image" name="image" accept="image/*">
+            <span  class="form-error-msg" id="img2-rr"></span>
+          
+           
+            <label  id="img11" for="img1">Select adhar card image:</label>
+            <input class="upload" type="file" id="adhar" name="img1" accept="image/*">
+            <span  class="form-error-msg" id="img1-rr"></span>
+            
+            <button id="sbutton" type="button" onclick="sendDatav()">Submit Form</button>
+          </div>
+  
+        </form>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	const checkgendervalue=()=>{
+
+
+    	}
+
+      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    	
+
+function validatefor(){
+	 console.log($(".genderradio:checked").val())
+   console.log($(".nationality:checked").val())
+	console.log($("#image").val())
+  console.log($("#adhar").val())
+	
+	if($("#name").val().trim()==""){
+	$("#name-err").html("Please enter requuired field");
+	return false;
+}
+	
+
+if($("#email").val().trim()==""){
+	$("#email-err").html("Please enter required field");
+	return false;
+}
+if (reg.test($("#email").val().trim()) == "") {
+    $("#email-err").html("Email address is invalid");
+  
+    return false;
+}
+
+
+
+
+if($("#city").val().trim()==""){
+	$("#city-err").html("Please enter requuired field");
+	return false;
+}
+
+if($("#marks").val().trim()==""){
+	$("#10thhclass-err").html("Please enter required field");
+	return false;
+}
+if($("#passing10").val().trim()==""){
+	$("#passingyear-err").html("Please enter requuired field");
+	return false;
+}
+
+if($("#marks12").val().trim()==""){
+	$("#12thhclass-err").html("Please enter required field");
+	return false;
+}
+
+
+if($("#passing12").val().trim()==""){
+	$("#passingyear12-err").html("Please enter requuired field");
+	return false;
+}
+
+if($("#image").val().trim()==''){
+$("#img2-rr").html("Please upload images")
+}
+if($("#adhar").val().trim()==''){
+$("#img1-rr").html("Please upload images")
+}
+
+return true
+
+
+}
+
+$("input").on("keydown",function(){
+$(".form-error-msg").html("")
+})
+
+
+$(document).ready(function(){
+          var formData = new FormData();
+          var files = $('#image')[0].files;
+          formData.append('image', files[0]);
+        });
+
+
+
+
+ function sendDatav(){
+
+  	if(!validatefor()){
+  		return;
+  	}
+  		Swal.fire(
+  'Great',
+  'You are sucessfully Registered',
+  'success'
+)
+  
+  
+
+
+
+
+
+        $.ajax({
+            type: 'POST',
+           
+            url: 'config.php',
+            data: {
+              
+        
+                name: $("#name").val(),
+                email: $("#email").val(),
+                number:$("#number").val(),
+                gender:$(".genderradio:checked").val(),
+                 city:$("#city").val(),
+                 state:$("#state").val(),
+                 nationality:$(".nationality:checked").val(),
+                 marks:$("#marks").val(),
+                 passing10:$("#passing10").val(),
+                  marks12:$("#marks12").val(),
+                 passing12:$("#passing12").val(),
+                 image:$("#image").val(),
+                 adhar:$("#adhar").val(),
+                
+            },
+            dataType: 'json',
+            success: function(data, status, xhr) {
+           
+                console.log('status: ' + status + ', data: ' + ":" + data + ":");
+                if (status == "success") {
+                    console.log("sucess");
+                   
+                } else {
+                    alert("Upload Failed");
+                }
+            },
+            error: function(jqXhr, textStatus, errorMessage) {
+             
+                console.log('Error' + errorMessage);
+            }
+        });
+      }
+  </script>
+   
+  </body>
+</html>
